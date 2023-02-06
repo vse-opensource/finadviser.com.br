@@ -1,2 +1,360 @@
-<h1>Updating...</h1>
-<h2>Coming soon it's works.</h2>
+<html>
+    <!-- head -->
+    <head>
+        <!-- título dinâmico -->
+        <title>Finadviser</title>
+
+        <!-- meta data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=no">
+
+        <!-- facebook -->
+        <meta property="og:url"                content="https://finadviser.com.br"/>
+        <meta property="og:type"               content="article" />
+        <meta property="og:title"              content="Finadviser" />
+        <meta property="og:description"        content="Aplicações financeiras tradicionais no Brasil já não rendem como antigamente. Temos assistido na última década mudanças dos patamares dos juros no país e no mundo e, nesse cenário, a busca por melhores retornos demanda planejamento e diversificação de investimentos. Nós, da FinAdviser, temos expertise e isenção necessária para te auxiliar a navegar nessa nova conjuntura." />
+        <meta property="og:image" content="images/facebook.jpg"/>
+
+        <!-- bibliotecas css -->
+        <link rel="icon" href="images/favicon.png">
+        <link rel="stylesheet" href="libraries/bulma.min.css">
+        <link rel="stylesheet" href="libraries/swiper.min.css">
+        <link rel="stylesheet" href="libraries/jquery.fancybox.min.css">
+        <link rel="stylesheet" href="libraries/animate.min.css">
+        <link rel="stylesheet" href="design.css">
+
+        <!-- fake loader -->
+        <div class="fake-loader has-text-centered">
+            <img src="images/loading.gif">
+        </div>
+    </head>
+
+    <body>
+        <!-- nav -->
+        <section class="section" id="nav">
+            <div class="columns">
+                <div class="column"><img src="images/logo-header.png"></div>
+                <div class="column is-8">
+                    <ul>
+                        <li><a href="index.html" class="active">Início</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="nosso-diferencial.html">Nosso Diferencial</a></li>
+                        <li><a href="como-funciona.html">Como Funciona</a></li>
+                        <li><a href="https://medium.com/@finadviser" target="_blank">Blog</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="mobile">
+            <div class="nav-mobile-box">
+                <h1 class="title is-2 fine c4">MENU</h1>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="nosso-diferencial.html">Nosso Diferencial</a></li>
+                    <li><a href="como-funciona.html">Como Funciona</a></li>
+                    <li><a href="https://medium.com/@finadviser" target="_blank">Blog</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <img src="images/logo-header.png">
+            <div class="nav-mobile">
+                <a class="button is-dark" onclick="openMenu();">≡</a>
+            </div>
+
+            <script type="text/javascript">
+                function openMenu(){
+                    $(".nav-mobile-box").animate({right: '0px'}, "fast");
+                }
+                function closeMenu(){
+                    $(".nav-mobile-box").animate({right: '-1000px'}, "fast");
+                }
+            </script>
+        </div>
+
+        <!-- banner -->
+        <div class="banner">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Slides 01 -->
+                    <div class="swiper-slide">
+                        <a href="sobre">
+                            <div class="home-banner home-banner01"></div>
+                        </a>
+                    </div>
+
+                    <!-- Slides 02 -->
+                    <div class="swiper-slide">
+                        <a href="https://medium.com/@finadviser" target="_blank">
+                            <div class="home-banner home-banner02"></div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+
+        <!-- apresentação -->
+        <div class="section fa-box">
+            Aplicações financeiras tradicionais <strong>no Brasil já não rendem como antigamente</strong>. Temos assistido na última década mudanças dos patamares dos juros no país e no mundo e, nesse cenário, a busca por melhores retornos demanda planejamento e diversificação de investimentos. Nós, <strong>da FinAdviser</strong>, temos expertise e isenção necessária para te auxiliar a navegar nessa nova conjuntura.
+        </div>
+
+
+        <!-- como funciona -->
+        <section class="hero" id="home">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="titles has-text-centered">
+                        <h1 class="title is-1 fine">Como Funciona</h1>
+                    </div>
+
+                    <div class="columns">
+                        <div class="column">
+                            <img src="images/icon1.png"><br>
+                            <img src="images/div-1.png"><br>
+                            <strong>Administração Personalizada de Investimentos:</strong> portfólios de investimentos são totalmente personalizados de acordo com a realidade de cada cliente.
+                        </div>
+
+                        <div class="column">
+                            <img src="images/icon2.png"><br>
+                            <img src="images/div-1.png"><br>
+                            <strong>Alocação Inteligente de Ativos:</strong> procuramos aplicar seu capital em ativos descorrelacionados de maneira a reduzir o risco e a volatilidade do seu portfólio.
+                        </div>
+
+                        <div class="column">
+                            <img src="images/icon3.png"><br>
+                            <img src="images/div-1.png"><br>
+                            <strong>Relatório Mensal de Resultados:</strong> produzimos e enviamos um Relatório Mensal explicando como os resultados foram atingidos ajudando assim na educação financeira do cliente.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- fundadores -->
+        <section class="hero">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="titles has-text-centered">
+                        <h1 class="title is-1 fine">Fundadores</h1>
+                    </div>
+
+                    <div class="columns">
+                        <div class="column">
+                            <figure class="has-text-centered">
+                                <img src="images/pic-1.png">
+                                <h1 class="title is-5 c1">Caio Barbuio</h1>
+                            </figure>
+
+                            <!-- social network -->
+                            <div class="box">
+                                <article class="media">
+                                    <div class="media-left">
+                                        <figure class="image is-64x64">
+                                            <img src="images/icon-mail.png" alt="Image">
+                                        </figure>
+                                    </div>
+                                    <div class="media-content">
+                                        <div class="content">
+                                            <p>
+                                                <br>
+                                                caiobarbuio@finadviser.com.br
+                                            </p>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="media">
+                                    <div class="media-left">
+                                        <figure class="image is-64x64">
+                                            <img src="images/icon-linkedin.png">
+                                        </figure>
+                                    </div>
+                                    <div class="media-content">
+                                        <div class="content">
+                                            <br>
+                                            <a href="https://www.linkedin.com/in/caio-barbuio-2b9231b2/" target="_blank">
+                                                in/caio-barbuio
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <div class="curriculo">
+                                <p>&nbsp;</p>
+                                Economista formado pela PUC-SP, CEA (Certificação de Especialista em Investimentos ANBIMA), com experiência em Gestão de Carteiras no Banco Santander.
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <figure class="has-text-centered">
+                                <img src="images/pic-2.png">
+                                <h1 class="title is-5 c1">Celina Ramalho</h1>
+                            </figure>
+
+                            <!-- social network -->
+                            <div class="box">
+                                <article class="media">
+                                    <div class="media-left">
+                                        <figure class="image is-64x64">
+                                            <img src="images/icon-mail.png" alt="Image">
+                                        </figure>
+                                    </div>
+                                    <div class="media-content">
+                                        <div class="content">
+                                            <p>
+                                                <br>
+                                                celinaramalho@finadviser.com.br
+                                            </p>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="media">
+                                    <div class="media-left">
+                                        <figure class="image is-64x64">
+                                            <img src="images/icon-linkedin.png">
+                                        </figure>
+                                    </div>
+                                    <div class="media-content">
+                                        <div class="content">
+                                            <br>
+                                            <a href="https://www.linkedin.com/in/celinaramalhosemearconsultoria/" target="_blank">
+                                                in/celinaramalhosemearconsultoria
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <div class="curriculo">
+                                <p>&nbsp;</p>
+                                Doutora em Economia pela FGV-SP. <br>
+                                Mestre e Graduada em Economia pela PUC-SP. <br>
+
+                                Membro do Conselho Federal de Economia. <br>
+
+                                Ex-Vice-Presidente da Ordem dos Economistas do Brasil.<br>
+                                Analista de Cenários Econômicos e Setoriais para decisões de investimentos.<br>
+                                Docente nos cursos de graduação e MBAs da área de negócios na FGV, PUC, Mackenzie e Universidade Anhembi Morumbi.<br>
+                                Professora da disciplina Brazilian Economy no MBA Doing Business in Brazil da FGV, em parceria com a University of Minnesota, NY Stern University e Nyenrode Business University Netherlands.<br>
+                                Experiência no Citibank e como Diretora da Semear Consultoria.<br>
+                                Tutora no curso Managing Macroeconomic Risk in Emerging Markets, 2014, Columbia University, New York.<br>
+                            </div>
+
+                            <div class="link-celina has-text-centered">
+                                <a href="celina-ramalho">Conheça melhor Celina Ramalho</a>
+                                <p>&nbsp;</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <section class="hero" id="footer">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="columns">
+                        <div class="column is-2">
+
+                            <img src="images/anbima.png" width="" height="" alt="" />
+                            <div style="height: 30px"></div>
+                            <img src="images/logo-footer.png" width="" height="" alt="" />
+                            <p>&nbsp;</p>
+                            <div class="has-text-centered">
+                                <a href="https://www.linkedin.com/company/finadviser/" target="_blank">
+                                    <img src="images/footer-linkedin.png"/>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="column is-1"></div>
+                        <div class="column is-6">
+                            <h1 class="title is-5 c4">Finadviser</h1>
+                            <p class="about c6">
+                                Queremos mudar a maneira como o brasileiro investe e ajudá-lo a alcançar seus objetivos de preservação e aumento do patrimônio nesse novo cenário econômico, seja configurar a sua estrutura de vida, uma casa na praia, se aposentar mais cedo ou pagar a faculdade dos filhos.
+                            </p>
+                            <p>&nbsp;</p>
+                            <h3 class="c4">Site Map</h3>
+
+                            <ul>
+                                <li><a href="index">Início</a></li>
+                                <li><a href="sobre">Sobre</a></li>
+                                <li><a href="nosso-diferencial">Nosso Diferencial</a></li>
+                                <li><a href="como-funciona">Como Funciona</a></li>
+                                <li><a href="https://medium.com/@finadviser" target="_blank">Blog</a></li>
+                                <li><a href="contato">Contato</a></li>
+                            </ul>
+                        </div>
+                        <div class="column is-3">
+                            <h3 class="c4">Contatos</h3>
+                            <p>&nbsp;</p>
+
+                            <div class="columns has-text-left">
+                                <div class="column is-3">
+                                    <img src="images/footer-icon-tel.png"/>
+                                </div>
+
+                                <div class="column">
+                                    <div style="height: 14px"></div>
+                                    <p class="c1">+55 11 3168-7877</p>
+                                </div>
+                            </div>
+
+                            <div class="columns has-text-left">
+                                <div class="column is-3">
+                                    <img src="images/footer-icon-mail.png"/>
+                                </div>
+
+                                <div class="column">
+                                    <div style="height: 14px"></div>
+                                    <p class="c1">contato@finadviser.com.br</p>
+                                </div>
+                            </div>
+
+                            <div class="columns has-text-left">
+                                <div class="column is-3">
+                                    <img src="images/footer-icon-map.png"/>
+                                </div>
+
+                                <div class="column">
+                                    <p class="c1">Rua Pais de Araújo, 29 - Itaim Bibi - São Paulo – SP, CEP: 04531-090 , conj 122</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- bibliotecas javascript -->
+        <script src="libraries/jquery.min.js"></script>
+        <script src="libraries/swiper.min.js"></script>
+        <script src="libraries/jquery.fancybox.min.js"></script>
+        <script src="libraries/jquery.zoom.min.js"></script>
+        <script>
+            setTimeout(function(){ 
+                $(".fake-loader").fadeOut();
+            }, 1000);
+            $(document).ready(function () {
+                var mySwiper = new Swiper ('.swiper-container', {
+                    direction: 'horizontal',
+                    loop: true,
+                    autoplay: { delay: 3000, },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                }) });
+        </script>
+    </body>
+</html>

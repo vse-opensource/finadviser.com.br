@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+/* ..................................... 
+
+default colors
+
+..................................... */
+:root {
+    --color1: #f58a00;
+    --color2: #273b3b;
+    --color3: #37393d;
+    --color4: #ffffff;
+    --color5: #000000;
+    --color6: #cce2e2;
+}
+::selection {      background: var(--color1); }
+::-moz-selection { background: var(--color1); }
+
+.c1{ color: var(--color1) !important; }
+.c2{ color: var(--color2) !important; }
+.c3{ color: var(--color3) !important; }
+.c4{ color: var(--color4) !important; }
+.c5{ color: var(--color5) !important; }
+.c6{ color: var(--color6) !important; }
+
+.bg1{ background-color: var(--color1) !important; }
+.bg2{ background-color: var(--color2) !important; }
+.bg3{ background-color: var(--color3) !important; }
+.bg4{ background-color: var(--color4) !important; }
+.bg5{ background-color: var(--color5) !important; }
+.bg6{ background-color: var(--color6) !important; }
+
+/* ..................................... 
+
+default
+
+..................................... */
+.fake-loader{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    z-index: 99;
+}
+.fake-loader img{
+    margin-top: 15%;
+    width: 11%;
+}
+#link{
+    font-size: 20px;
+    color: var(--color1);
+    transition: color .5s ease-out;
+    -moz-transition: color .5s ease-out;
+    -webkit-transition: color .5s ease-out;
+    -o-transition: color .5s ease-out;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+#link:hover{
+    color: var(--color2) !important
+}
+.fine{ font-weight: 200 !important; }
+.titles{ padding: 40px; }
+.banner{ padding-top: 150px; }
+.active{
+    font-weight: bold;
+    color: var(--color1) !important;
+    text-decoration: underline;
+}
+.fa-box{
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: justify;
+    font-size: 18px;
+}
+.fa-box strong{
+    color: var(--color1) !important;
+    font-weight: 600 !important;
+}
+.fa-box span{
+    color: var(--color1) !important;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .banner{ padding: 0; }
+    .fa-box{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .titles{ padding: 20px; }
+    .is-1{
+        font-size: 30px !important;
+    }
+    .fake-loader img{
+        margin-top: 15%;
+        width: 20%;
+    }
+}
+
+/* ..................................... 
+
+nav
+
+..................................... */
+#nav{
+    width: 100%;
+    display: block;
+    position: fixed;
+    background-color: white;
+    z-index: 97;
+}
+#nav ul li a{
+    font-size: 20px;
+    color: var(--color2);
+    transition: color .5s ease-out;
+    -moz-transition: color .5s ease-out;
+    -webkit-transition: color .5s ease-out;
+    -o-transition: color .5s ease-out;
+    text-transform: capitalize;
+}
+#nav ul li a:hover{
+    color: var(--color1) !important
+}
+#nav ul{ 
+    display: inline-flex; 
+    margin-top: 14px;
+}
+#nav ul li{ padding-right: 20px; }
+.nav-mobile{
+    position: fixed;
+    right: 10px;
+    top: 14px;
+    z-index: 98;
+}
+.mobile{ display: none; }
+.nav-mobile-box{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #222;
+    z-index: 99;
+    padding: 20px;
+    right: -1000px;
+}
+.nav-mobile-box a{
+    font-size: 20px;
+    color: var(--color1) !important;
+}
+.nav-mobile-box ul li{
+    padding-bottom: 20px;
+}
+@media only screen and (max-width: 768px) {
+    #nav{ display: none; }
+    .mobile{ display: block; }
+}
+
+/* ..................................... 
+
+banners
+
+..................................... */
+.home-banner{
+    background-position: top;
+    width: 100%;
+    height: 470px;
+}
+.home-banner01{      background-image: url(images/banner-home.jpg); }
+.home-banner02{      background-image: url(images/banner-blog.png); }
+
+.banners-internos{ height: 260px; }
+.banner-sobre{         background-image: url(images/banner-interno-sobre.png); }
+.banner-diferencial{   background-image: url(images/banner-interno-diferencial.png); }
+.banner-comofunciona{  background-image: url(images/banner-interno-comofunciona.png); }
+.banner-contato{       background-image: url(images/banner-interno-contato.png); }
+
+@media only screen and (max-width: 768px) {
+    .banner .swiper-container{ height: 380px; }
+    .home-banner01{ background-image: url(images/banner-home-mobile.png); }
+    .home-banner02{ background-image: url(images/banner-blog-mobile.png); }
+
+    .banners-internos{ 
+        background-size: cover;
+        width: 100%;
+        height: 90px; 
+    }
+}
+
+
+/* ..................................... 
+
+home
+
+..................................... */
+.banner .swiper-container{
+    height: 390px;
+}
+.banner .swiper-container:hover{
+    opacity: .9;
+}
+.swiper-button-prev, .swiper-button-next{
+    color: wheat;
+}
+.swiper-button-prev:hover{
+    color: var(--color1) !important;
+}
+.swiper-button-next:hover{
+    color: var(--color1) !important;
+}
+#home strong{
+    color: var(--color1) !important;
+    font-weight: 600 !important;
+}
+#home .column{
+    text-align: center;
+}
+.curriculo{
+    font-size: 14px;
+    font-weight: 500 !important;
+    color: black !important;
+}
+.link-celina{
+    margin-top: 30px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.link-celina a{
+    color: var(--color1) !important;
+}
+article a{
+    color: var(--color1) !important;
+    text-decoration: underline;
+}
+
+/* ..................................... 
+
+nosso diferencial
+
+..................................... */
+.consultor-image{
+    float: left;
+    padding-right: 20px;
+}
+
+/* ..................................... 
+
+como funciona
+
+..................................... */
+#icons-comofunciona{
+    float: left;
+    width: 100px;
+    padding-right: 20px;
+}
+
+/* ..................................... 
+
+contato
+
+..................................... */
+.contato-info{ font-size: 16px; }
+
+
+/* ..................................... 
+
+footer
+
+..................................... */
+#footer{ background-color: #273b3b !important; }
+#footer ul{ 
+    display: inline-flex; 
+    margin-top: 14px;
+}
+#footer ul li{ padding-right: 14px; }
+#footer ul li a{
+    font-size: 14px;
+    color: var(--color1) !important;
+    transition: color .5s ease-out;
+    -moz-transition: color .5s ease-out;
+    -webkit-transition: color .5s ease-out;
+    -o-transition: color .5s ease-out;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+#footer .about{
+    font-size: 14px;
+    text-align: justify;
+}
+@media only screen and (max-width: 768px) {
+    #footer ul{ 
+        display: block; 
+        margin-top: 14px;
+    }
+}

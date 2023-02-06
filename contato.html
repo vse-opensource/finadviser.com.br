@@ -1,0 +1,211 @@
+<html>
+    <!-- head -->
+    <head>
+        <!-- título dinâmico -->
+        <title>Finadviser</title>
+
+        <!-- meta data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=no">
+
+        <!-- facebook -->
+        <meta property="og:url"                content="https://finadviser.com.br"/>
+        <meta property="og:type"               content="article" />
+        <meta property="og:title"              content="Finadviser" />
+        <meta property="og:description"        content="Aplicações financeiras tradicionais no Brasil já não rendem como antigamente. Temos assistido na última década mudanças dos patamares dos juros no país e no mundo e, nesse cenário, a busca por melhores retornos demanda planejamento e diversificação de investimentos. Nós, da FinAdviser, temos expertise e isenção necessária para te auxiliar a navegar nessa nova conjuntura." />
+        <meta property="og:image" content="images/facebook.jpg"/>
+
+        <!-- bibliotecas css -->
+        <link rel="icon" href="images/favicon.png">
+        <link rel="stylesheet" href="libraries/bulma.min.css">
+        <link rel="stylesheet" href="libraries/swiper.min.css">
+        <link rel="stylesheet" href="libraries/jquery.fancybox.min.css">
+        <link rel="stylesheet" href="libraries/animate.min.css">
+        <link rel="stylesheet" href="design.css">
+
+        <!-- fake loader -->
+        <div class="fake-loader has-text-centered">
+            <img src="images/loading.gif">
+        </div>
+    </head>
+
+    <body>
+        <!-- nav -->
+        <section class="section" id="nav">
+            <div class="columns">
+                <div class="column"><img src="images/logo-header.png"></div>
+                <div class="column is-8">
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="nosso-diferencial.html">Nosso Diferencial</a></li>
+                        <li><a href="como-funciona.html">Como Funciona</a></li>
+                        <li><a href="https://medium.com/@finadviser" target="_blank">Blog</a></li>
+                        <li><a href="contato.html" class="active">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="mobile">
+            <div class="nav-mobile-box">
+                <h1 class="title is-2 fine c4">MENU</h1>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="nosso-diferencial.html">Nosso Diferencial</a></li>
+                    <li><a href="como-funciona.html">Como Funciona</a></li>
+                    <li><a href="https://medium.com/@finadviser" target="_blank">Blog</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <img src="images/logo-header.png">
+            <div class="nav-mobile">
+                <a class="button is-dark" onclick="openMenu();">≡</a>
+            </div>
+
+            <script type="text/javascript">
+                function openMenu(){
+                    $(".nav-mobile-box").animate({right: '0px'}, "fast");
+                }
+                function closeMenu(){
+                    $(".nav-mobile-box").animate({right: '-1000px'}, "fast");
+                }
+            </script>
+        </div>
+
+        <!-- banner -->
+        <section class="banner">
+            <div class="banners-internos banner-contato"></div>
+        </section>
+
+        <!-- apresentação -->
+        <div class="section fa-box">
+            <div class="columns has-text-centered">
+                <div class="column">
+                    <img src="images/icon-tel.png">
+                    <h1 class="contato-info">+55 11 3168-7877</h1>
+                </div>
+                <div class="column">
+                    <img src="images/icon-mail.png">
+                    <h1 class="contato-info">contato@finadviser.com.br</h1>
+                </div>
+                <div class="column">
+                    <img src="images/icon-tel.png">
+                    <h1 class="contato-info">Rua Pais de Araújo, 29 – 
+                        Itaim Bibi – São Paulo – SP, 
+                        CEP: 04531-090 , conj 122</h1>
+                </div>
+                <div class="column">
+                    <a href="https://www.linkedin.com/company/finadviser/" target="_blank">
+                        <img src="images/icon-linkedin.png">
+                    </a>
+                    <h1 class="contato-info">company/finadviser</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="titles has-text-centered">
+            <h1 class="title is-1 fine">Como Chegar</h1>
+        </div>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.5593180530122!2d-46.683488785214635!3d-23.584265668323262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5742bef173a9%3A0x3888a2ae082f2bd7!2sRua%20Pais%20de%20Ara%C3%BAjo%2C%2029%20-%20Itaim%20Bibi%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004531-090!5e0!3m2!1sen!2sbr!4v1603726384239!5m2!1sen!2sbr" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+        <!-- footer -->
+        <section class="hero" id="footer">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="columns">
+                        <div class="column is-2">
+
+                            <img src="images/anbima.png" width="" height="" alt="" />
+                            <div style="height: 30px"></div>
+                            <img src="images/logo-footer.png" width="" height="" alt="" />
+                            <p>&nbsp;</p>
+                            <div class="has-text-centered">
+                                <a href="https://www.linkedin.com/company/finadviser/" target="_blank">
+                                    <img src="images/footer-linkedin.png"/>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="column is-1"></div>
+                        <div class="column is-6">
+                            <h1 class="title is-5 c4">Finadviser</h1>
+                            <p class="about c6">
+                                Queremos mudar a maneira como o brasileiro investe e ajudá-lo a alcançar seus objetivos de preservação e aumento do patrimônio nesse novo cenário econômico, seja configurar a sua estrutura de vida, uma casa na praia, se aposentar mais cedo ou pagar a faculdade dos filhos.
+                            </p>
+                            <p>&nbsp;</p>
+                            <h3 class="c4">Site Map</h3>
+
+                            <ul>
+                                <li><a href="index">Início</a></li>
+                                <li><a href="sobre">Sobre</a></li>
+                                <li><a href="nosso-diferencial">Nosso Diferencial</a></li>
+                                <li><a href="como-funciona">Como Funciona</a></li>
+                                <li><a href="https://medium.com/@finadviser" target="_blank">Blog</a></li>
+                                <li><a href="contato">Contato</a></li>
+                            </ul>
+                        </div>
+                        <div class="column is-3">
+                            <h3 class="c4">Contatos</h3>
+                            <p>&nbsp;</p>
+
+                            <div class="columns has-text-left">
+                                <div class="column is-3">
+                                    <img src="images/footer-icon-tel.png"/>
+                                </div>
+
+                                <div class="column">
+                                    <div style="height: 14px"></div>
+                                    <p class="c1">+55 11 3168-7877</p>
+                                </div>
+                            </div>
+
+                            <div class="columns has-text-left">
+                                <div class="column is-3">
+                                    <img src="images/footer-icon-mail.png"/>
+                                </div>
+
+                                <div class="column">
+                                    <div style="height: 14px"></div>
+                                    <p class="c1">contato@finadviser.com.br</p>
+                                </div>
+                            </div>
+
+                            <div class="columns has-text-left">
+                                <div class="column is-3">
+                                    <img src="images/footer-icon-map.png"/>
+                                </div>
+
+                                <div class="column">
+                                    <p class="c1">Rua Pais de Araújo, 29 - Itaim Bibi - São Paulo – SP, CEP: 04531-090 , conj 122</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- bibliotecas javascript -->
+        <script src="libraries/jquery.min.js"></script>
+        <script src="libraries/swiper.min.js"></script>
+        <script src="libraries/jquery.fancybox.min.js"></script>
+        <script src="libraries/jquery.zoom.min.js"></script>
+        <script>
+            setTimeout(function(){ 
+                $(".fake-loader").fadeOut();
+            }, 1000);
+            $(document).ready(function () {
+                var mySwiper = new Swiper ('.swiper-container', {
+                    direction: 'horizontal',
+                    loop: true,
+                    autoplay: { delay: 3000, },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                }) });
+        </script>
+    </body>
+</html>
